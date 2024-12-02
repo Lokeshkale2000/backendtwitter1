@@ -19,9 +19,9 @@ app.use(express.urlencoded({
 app.use(express.json());
 app.use(cookieParser());
 const corsOptions = {
-    origin:"http://localhost:3001",
-    credentials:true
-}
+  origin: ["http://localhost:3001","https://vercel.com/lokeshkale2000s-projects/twitter-main-zxty",],
+  credentials: true,
+};
 app.use(cors(corsOptions));
 
 // api
